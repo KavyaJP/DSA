@@ -6,13 +6,15 @@ int main()
     char c[50], ch;
     int count = 0;
     cout << "Enter a string: ";
-    cin.getline(c, 50);
+    gets(c);
     cout << "Enter a character: ";
     cin >> ch;
     for (int i = 0; i < 50; i++)
     {
         if (c[i] == ch)
             count++;
+        else if (c[i] == '\0')
+            break;
     }
     if (count == 0)
         cout << ch << " is not present in the string";
