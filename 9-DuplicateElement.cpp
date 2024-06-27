@@ -1,4 +1,4 @@
-//Take array input from user and count for duplicates
+// Take array input from user and count for duplicates
 #include <iostream>
 using namespace std;
 int main()
