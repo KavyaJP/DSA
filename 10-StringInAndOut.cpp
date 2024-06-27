@@ -1,3 +1,4 @@
+//Take Input of String from user with space and without space and print both string
 #include <iostream>
 using namespace std;
 int main()
