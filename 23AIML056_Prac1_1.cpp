@@ -50,7 +50,7 @@ bool canPair(int arr[], int n, int k)
     else
     {
         cout << "Total Number of Pair: " << count << endl;
-        if (n % 2 != count)
+        if (n / 2 == count)
             cout << "This is a Complete Perfect Pair" << endl;
         return true;
     }
