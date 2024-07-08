@@ -5,7 +5,7 @@ int BinarySearch(int a[], int left, int right, int x)
 {
     while (left <= right)
     {
-        int mid = (right + left) / 2;
+        int mid = (right - left) / 2 + left;
         if (a[mid] == x)
             return mid;
         else if (a[mid] > x)
