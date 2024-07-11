@@ -10,3 +10,5 @@ Question 10 to 13 & Practical 1.1 - 27/7/2024
 Practical 1.2 & Practical 1.3 - 3/7/2024
 
 Practical 1.3 Binary Search & Practical 1.4 - 4/7/2024
+
+Practical 1.5 - 10/7/2024
