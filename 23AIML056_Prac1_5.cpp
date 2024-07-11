@@ -49,11 +49,11 @@ int main()
     cout << "Enter the number of rows(Column is set to 4): ";
     cin >> m;
     n = 4;
-    int matrix[m][4];
+    int matrix[m][n];
     cout << "Enter the Elements : " << endl;
     for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < n; j++)
         {
             cin >> matrix[i][j];
         }
