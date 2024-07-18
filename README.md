@@ -13,4 +13,4 @@ Practical 1.3 Binary Search & Practical 1.4 - 4/7/2024
 
 Practical 1.5 & Practical 2.1 A - 10/7/2024
 
-Pratical 2.1 B - 18/7/2024
+Pratical 2.1 B & Pratical 2.1 C - 18/7/2024
