@@ -13,10 +13,6 @@ void BubbleSort(int a[], int n)
             }
         }
     }
-    for (int i = 0; i < n; i++)
-    {
-        cout << a[i] << " ";
-    }
 }
 int main()
 {
@@ -28,4 +24,8 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
     BubbleSort(arr, n);
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
 }
