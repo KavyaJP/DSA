@@ -1,35 +1,44 @@
 // Sort an array in linear time if all of its items are in ascending order except for two swapped elements.
 #include <iostream>
 using namespace std;
-void sort(int a[], int n)
+void sort(int arr[], int n)
 {
-    int swaps = 0;
-    for (int i = 0; i < n; i++)
+    int first = -1, second = -1;
+    for (int i = 0; i < n - 1; ++i)
     {
-        if (a[i] > a[i + 1])
+        if (arr[i] > arr[i + 1])
         {
-            swap(a[i], a[i + 1]);
-            swaps++;
-            if (swaps == 1)
-                break;
+            if (first == -1)
+                first = i;
+            else
+                second = i + 1;
         }
     }
+    if (second == -1)
+        second = first + 1;
+    swap(arr[first], arr[second]);
+}
+void printArray(int arr[], int n)
+{
+    for (int i = 0; i < n; ++i)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
 int main()
 {
     int n;
-    cout << "Enter the number of elements : ";
+    cout << "Enter the number of elements in the array: ";
     cin >> n;
-    int array[n];
-    cout << "Enter the elements : ";
-    for (int i = 0; i < n; i++)
+    int arr[n];
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; ++i)
     {
-        cin >> array[i];
+        cin >> arr[i];
     }
-    sort(array, n);
-    cout << "Sorted array: ";
-    for (int i = 0; i < n; i++)
-    {
-        cout << array[i] << " ";
-    }
+    sort(arr, n);
+    cout << "Sorted Array : ";
+    printArray(arr, n);
+    return 0;
 }
