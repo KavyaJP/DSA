@@ -5,7 +5,6 @@
     (d) Delete all nodes of linked list
 Note: Display content of linked list after each operation.*/
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 struct node
 {
@@ -15,8 +14,7 @@ struct node
 struct node *first = NULL;
 void insert_front(int n)
 {
-    struct node *temp;
-    temp = (struct node *)malloc(sizeof(struct node));
+    struct node *temp = new node;
     temp->data = n;
     temp->next = NULL;
     if (first == NULL)
