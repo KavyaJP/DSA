@@ -35,7 +35,7 @@ void delete_last()
     temp = first;
     if (first == NULL)
     {
-        cout << "List is empty" << endl;
+        cout << "Underflow" << endl;
         return;
     }
     else if (first->next == NULL)
@@ -80,7 +80,7 @@ void delete_nth(int n)
     int count = 0, size = sizeOfList();
     if (first == NULL)
     {
-        cout << "List is empty" << endl;
+        cout << "Underflow" << endl;
         return;
     }
     while (temp != NULL)
@@ -106,7 +106,7 @@ void display()
     trav = first;
     if (first == NULL)
     {
-        cout << "List is empty" << endl;
+        cout << "Underflow" << endl;
         return;
     }
     cout << endl
