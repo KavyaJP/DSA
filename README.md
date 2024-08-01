@@ -18,3 +18,5 @@ Practical 2.1 B & Practical 2.1 C - 18/7/2024
 Practical 2.2 - 24/7/2024
 
 Practical 2.3 - 25/7/2024
+
+Practical 3.1 - 31/7/2024
